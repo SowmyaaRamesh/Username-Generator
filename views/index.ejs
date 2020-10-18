@@ -15,9 +15,12 @@
 
 <body>
     <div class="container">
+        <!-- -----------------Header-------------- -->
         <div class="header">
             <h1>Have trouble finding a cool username?</h1>
         </div>
+
+        <!-- ------------ User Input ------------------ -->
         <div class="customize">
             <h3>Customize your username now!</h3>
             <form action="/" method="POST">
@@ -45,7 +48,10 @@
 
             </form>
         </div>
+
+        <!-- --------------Display the list of usernames----------- -->
         <div class="generate">
+            <!-- Print the list of usernames computed  -->
             <ul>
                 <% for(let i = 0; i<usernames.length; i++) { %>
                     <li>
