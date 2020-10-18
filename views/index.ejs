@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts  -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Username generator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Have trouble finding a cool username?</h1>
+        </div>
+        <div class="customize">
+            <h3>Customize your username now!</h3>
+            <form action="/" method="POST">
+                <div class="form">
+                    <div class="form-group">
+                        <input type="radio" id="huey" name="category" value="Boyish">
+                        <label for="Boyish">Boyish</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="radio" id="dewey" name="category" value="Girly">
+                        <label for="Girly">Girlish</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="radio" id="louie" name="category" value="Neutral">
+                        <label for="Neutral">Neutral</label>
+                    </div>
+
+                </div>
+
+                <div class="btn">
+                    <input type="submit" value="Go!">
+                </div>
+
+            </form>
+        </div>
+        <div class="generate">
+            <ul>
+                <% for(let i = 0; i<usernames.length; i++) { %>
+                    <li>
+                        <%= usernames[i] %>
+                    </li>
+                    <%} %>
+
+
+            </ul>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
